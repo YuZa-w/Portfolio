@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Professionnel - Valentine Chuon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="navbar">
+        <div class="logo">
+            <img src="images/Photo_de_profil.jpg" alt="Photo de Valentine CHUON" class="logo-img">
+        </div>
+
+        <nav class="nav-links">
+            <a href="#accueil">Accueil</a>
+            <a href="#competences">Compétences</a>
+            <a href="#projets">Projets</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </header>
+
+    <section id="accueil" class="section1">
+        <div class="accueil-container">
+            <div class="box box_prim">
+                <h1 class="box__title">Bienvenue sur mon Portfolio !</h1>
+                <p class="box__text">
+                    Je suis <strong>Valentine CHUON</strong>, étudiante en Pré-MSc à <strong>Epitech</strong>,
+                    actuellement à la recherche d'une alternance en <strong>développement web</strong>,
+                    <strong>data</strong> ou <strong>DevOps</strong>.
+                </p>
+                <p class="box__text">
+                    Mon rythme d’alternance est de 4 semaines en entreprise et 2 semaines à l’école à partir de Janvier 2025.
+                    Passionnée, curieuse et rigoureuse, j’apprends chaque jour à allier créativité et technologie.
+                </p>
+            </div>
+
+            <div class="box box_prim">
+                <p class="box__text">
+                    Dans mon cursus actuel, je suis en cours d'acquisition des compétences suivantes, DevOps, Administration Système, cependant, l'HTML CSS, le Java, JavaScript ainsi que Pythonn sont des langages que je maîtrise.
+                </p>
+            </div>
+
+            <div class="box contact-box" id="contact">
+                <h2 class="box__title">Me Contacter</h2>
+                <a href="mailto:chuon.valentine@gmail.com" class="contact-item">📧 chuon.valentine@gmail.com</a>
+                <a href="https://www.linkedin.com" target="_blank" class="contact-item">💼 LinkedIn</a>
+                <a href="https://github.com" target="_blank" class="contact-item">💻 GitHub</a>
+
+                <div class="cv-section">
+                    <h3>📄 Mon CV</h3>
+                    <p>Vous pouvez le télécharger ici :</p>
+                    <a href="documents/CV - Valentine Chuon.pdf" download class="cv-link">Télécharger mon CV</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="competences" class="section2">
+        <div class="box">
+            <h2 class="box__title">Mes Compétences</h2>
+            <div class="tag-cloud">
+                <span>HTML</span>
+                <span>CSS</span>
+                <span>JavaScript</span>
+                <span>React</span>
+                <span>Python</span>
+                <span>SQL</span>
+                <span>Node.js</span>
+                <span>UI/UX</span>
+                <span>Java</span>
+                <span>PHP</span>
+            </div>
+        </div>
+
+        <div class="box">
+            <h2 class="box__title">Mes Formations</h2>
+            <div class="tag-cloud">
+                <span>🎓 Licence AES - Droit, Économie, Gestion - Paris 1 Panthéon Sorbonne</span>
+                <span>💻 Pré-MSc - Informatique - Epitech Paris</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="projets" class="section3">
+        <div class="box">
+            <h2 class="box__title">Mes Projets</h2>
+        </div>
+
+        <div class="projects">
+            <div class="project-card">
+                <h3>JobBoard</h3>
+                <p>Création d'un site “FindJob” permettant de consulter et poster des offres d’emploi.</p>
+            </div>
+            <div class="project-card">
+                <h3>Digital Resume</h3>
+                <p>CV interactif développé en HTML et CSS, hébergé en ligne.</p>
+            </div>
+            <div class="project-card">
+                <h3>Hangman Game</h3>
+                <p>Jeu du pendu en Python, avec gestion dynamique du score.</p>
+            </div>
+        </div>
+    </section>
+    <footer
+        style="background-color: hsl(216, 25%, 22%); color: white; padding: 20px 0; text-align: center; font-family: Arial, sans-serif;">
+        <div style="margin-bottom: 10px;">
+            CHUON VALENTINE — Pré-MSc • Epitech
+        </div>
+        <div>
+            <a href="https://www.linkedin.com" target="_blank" style="margin-right: 15px;">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn"
+                    style="width:24px; height:24px; filter: invert(100%);">
+            </a>
+            <a href="https://github.com" target="_blank">
+                <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/github.svg" alt="GitHub"
+                    style="width:24px; height:24px; filter: invert(100%);">
+            </a>
+        </div>
+    </footer>
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            hamburger.classList.toggle('active');
+        });
+    </script>
+</body>
+
+</html>
